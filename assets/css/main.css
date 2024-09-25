@@ -761,7 +761,9 @@ section,
 @media (max-width: 576px) {
   .hero img {
     max-width: 100%; /* Ensures image does not exceed container width */
-    margin-left: 0; /* Removes margin on mobile phones */
+    max-height: 70%;
+    margin-left: 80px; /* Removes margin on mobile phones */
+    margin-right: auto;
   }
 }
 
@@ -769,6 +771,11 @@ section,
   position: relative;
   z-index: 3;
 }
+
+.home-name {
+ color: #00e43d;
+}
+
 
 .hero h2 {
   margin: 0;
@@ -823,12 +830,13 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-title {
-  color: var(--heading-color);
+  color: #00e43d;
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
@@ -887,6 +895,14 @@ section,
   font-size: 24px;
 }
 
+.about .resume-title {
+  color: #00e43d;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .about .download-button {
   display: inline-block;
   padding: 10px 20px;
@@ -930,19 +946,22 @@ section,
 
 .about .profile-image {
   display: block;
-  width: 100%; /* Ensures responsiveness */
+  max-width: 100%; /* Ensures the image doesn't exceed container width */
   height: auto; /* Keeps aspect ratio */
   border-radius: 15px; /* Rounds the corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow */
+  box-shadow: 0 8px 16px rgba(3, 171, 23, 0.2); /* Adds shadow */
   object-fit: cover; /* Ensures the image fits nicely */
   mask-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 1) 60%, transparent 150%);
   background-color: black;
   border-radius: 9%;
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  transform: translateY(-40px); /* Moves the image up by 10px */
+  margin-left: auto;
+  margin-right: auto; /* Centers the image horizontally */
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transform: translateY(-40px); /* Moves the image up by 40px */
 }
+
 
 /* Adjustments for tablets */
 @media (max-width: 768px) {
@@ -1450,7 +1469,6 @@ section,
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
 }
-
 
 
 

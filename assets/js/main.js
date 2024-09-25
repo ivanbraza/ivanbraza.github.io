@@ -109,6 +109,8 @@ if (preloader) {
   }
   window.addEventListener('load', aosInit);
 
+  
+
   /**
    * Init typed.js
    */
@@ -125,6 +127,8 @@ if (preloader) {
     });
   }
 
+
+  
   /**
    * Initiate Pure Counter
    */
